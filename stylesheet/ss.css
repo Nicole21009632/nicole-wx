@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #025e3c;
+}
+
+body {
+    background-color: #f1f1f1;
+    min-width: 100%;
+}
+
+/*navbar*/
+nav {
+    display: block;
+    left: 0;
+    background: #e7f4df;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+nav ul li:hover a {
+    color: #ffa700;
+}
+
+a.active {
+    color: #ffa700;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #ffa700;
+}
+
+.logo {
+    width: 10%;
+}
+
+
+
+.logo:hover {
+    animation-name: example;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    transform: rotate(350deg);
+}
+
+@keyframes example {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 500px;
+    }
+}
+
+.navbar-items {
+    display: block;
+    padding: 35px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+    float: right;
+    margin-top: -65px;
+}
+
+
+/*dropdown*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*Content*/
+.content {
+    padding: 50px;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: white;
+    z-index: -1;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.card {
+    background: white;
+    width: 97%;
+    margin: auto;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    filter: drop-shadow(8px 8px 10px #019961);
+}
+
+.tours-images {
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card p {
+    padding: 15px;
+}
+
+h3 {
+    padding: 15px 15px 0 15px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 10px 50px;
+}
+
+.card:hover {
+    background-color: rgb(62 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.row2 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background: white;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.RSGcolumn2 {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.RSGcolumn3 {
+    display: table-cell;
+    background: white;
+    float: left;
+    width: 66.66%;
+    border-radius: 0 15px 15px 0;
+}
+
+.RSG-image {
+    border-radius: 15px 0 0 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.RSG-text {
+    padding: 40px 40px 0 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.FOM:hover {
+    text-decoration: underline;
+}
+
+.japan-image {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px 15px 0 0;
+}
+
+.japan-column1 {
+    background-color: white;
+    padding: 20px;
+}
+
+.japan-column2 {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: white;
+}
+
+.japan-column2-selected {
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #019961;
+}
+
+.japantext {
+    color: white;
+}
+
+
+/*footer*/
+
+.footer-column {
+    float: left;
+    width: 33.33%;
+    padding: 40px;
+}
+
+h4 {
+    padding: 15px 15px 0 15px;
+}
+
+h5 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.pageNo {
+    text-align: center;
+}
+
+.pageID {
+    margin-right: 5px;
+}
+
+.pageID:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+    }
+
+    nav {
+        display: block;
+        background: #e7f4df;
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .logo {
+        width: 50%;
+        justify-content: center;
+    }
+
+    nav ul {
+        visibility: collapse;
+
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .RSGcolumn2 {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .RSGcolumn3 {
+        border-radius: 0 0 15px 15px;
+        width: 100%;
+    }
+
+    .RSG-image {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .RSG-text {
+        padding: 15px 15px 15px 15px;
+        width: 100%;
+    }
+
+    .pageNo {
+        margin-bottom: 20px;
+    }
+
+    #background-video {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+}
